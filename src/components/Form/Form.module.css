@@ -1,0 +1,53 @@
+.phonebook {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.title {
+  font-size: 24px;
+  color: #757474;
+}
+.inputText {
+  font-size: 20px;
+  padding: 4px;
+}
+.submit {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 15px;
+
+  outline: none;
+  border: none;
+  border-radius: 4px;
+
+  line-height: 36px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  background-color: #1a73e8;
+  position: relative;
+  overflow: hidden;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.submit:hover {
+  box-shadow: 0 1px 2px 0 rgb(26 115 232 / 45%),
+    0 1px 3px 1px rgb(26 115 232 / 30%);
+  background-color: #297be6;
+}
+.submit:active {
+  box-shadow: 0 1px 2px 0 rgb(26 115 232 / 45%),
+    0 2px 6px 2px rgb(26 115 232 / 30%);
+  background-color: #1a73e8 !important;
+}
+.submit:focus-visible {
+  box-shadow: 0 0 0 3px lightskyblue;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

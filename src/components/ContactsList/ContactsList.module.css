@@ -1,0 +1,38 @@
+.item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 6px 10px;
+
+  outline: none;
+  border: none;
+  border-radius: 4px;
+
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  background-color: #1a73e8;
+  position: relative;
+  overflow: hidden;
+  vertical-align: top;
+  cursor: pointer;
+}
+.btn:hover {
+  box-shadow: 0 1px 2px 0 rgb(26 115 232 / 45%),
+    0 1px 3px 1px rgb(26 115 232 / 30%);
+  background-color: #297be6;
+}
+.btn:active {
+  box-shadow: 0 1px 2px 0 rgb(26 115 232 / 45%),
+    0 2px 6px 2px rgb(26 115 232 / 30%);
+  background-color: #1a73e8 !important;
+}
+.btn:focus-visible {
+  box-shadow: 0 0 0 3px lightskyblue;
+}
