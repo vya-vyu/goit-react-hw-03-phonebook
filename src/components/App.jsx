@@ -16,7 +16,9 @@ export class App extends Component {
     filter: '',
   };
   handleSubmitContacts = data => {
-    this.state.contacts.find(contact => contact.name === data.name)
+    this.state.contacts.find(
+      contact => contact.name.toLowerCase() === data.name.toLowerCase()
+    )
       ? window.alert(`${data.name} is already in contacts`)
       : this.setState({ contacts: [...this.state.contacts, data] });
   };
